@@ -1,0 +1,14 @@
+#Activate Conda
+source /N/slate/ealamb/miniconda3/bin/activate
+#Make directory in your slate for the sequencing files 
+mkdir GSF3964
+#Change directory to the HundleyLab project space to acquire sequencing files
+/N/project/HundleyLab/GSF3964
+#Copy files from the project space to your own directory 
+scp GSF3964* ealamb@quartz@uits.iu.edu:/N/slate/ealamb/GSF3964
+#Unzip the .gz files 
+gunzip GSF3964*
+
+
+
+
